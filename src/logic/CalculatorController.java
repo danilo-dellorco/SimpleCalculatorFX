@@ -70,7 +70,7 @@ public class CalculatorController {
 	}
 	
 	private void digitNumber(int num) {
-		if (isCalc) {
+		if (Boolean.TRUE.equals(isCalc)) {
 			tfResult.setText("");
 			isCalc = false;
 		}
@@ -112,7 +112,7 @@ public class CalculatorController {
 	@FXML
 	public void delNum(ActionEvent e) {
 		String currNum = this.tfResult.getText();
-		if (isCalc) {
+		if (Boolean.TRUE.equals(isCalc)) {
 			this.tfResult.setText("");
 			isCalc = false;
 		}
@@ -150,7 +150,8 @@ public class CalculatorController {
 					this.tfResult.setText(String.valueOf(""));
 					return;
 				}
-				break; 
+				break;
+			default:
 			}
 		this.tfResult.setText(String.valueOf(res));
 		this.n1 = "";
