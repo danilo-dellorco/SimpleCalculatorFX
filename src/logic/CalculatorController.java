@@ -12,7 +12,16 @@ public class CalculatorController {
 	@FXML private Button btnDiv;
 	@FXML private Button btnResult;
 	@FXML private Button btnDel;
-	@FXML private Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn0;
+	@FXML private Button btn0;
+	@FXML private Button btn1;
+	@FXML private Button btn2;
+	@FXML private Button btn3;
+	@FXML private Button btn4;
+	@FXML private Button btn5;
+	@FXML private Button btn6;
+	@FXML private Button btn7;
+	@FXML private Button btn8;
+	@FXML private Button btn9;
 	@FXML private TextField tfResult;
 	private String n1 = "";
 	private String n2 = "";
