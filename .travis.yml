@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - openjdk8
+addons:
+  sonarcloud:
+    organization: "danilo-dellorco"
+    token: "370aeaba6ad52db3c9fad078f5207e0506baeb60"
+script: 
+  - ant build
+  - sonar-scanner
